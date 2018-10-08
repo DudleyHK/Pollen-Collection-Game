@@ -37,17 +37,5 @@ public class InputManager : MonoBehaviour
 
 		  if(mouseMoving && release != null)
 				release(new Vector2(input.x, input.y));
-
-
-
-			return;
-			if(mouseDown)
-			 		HandleDrag.Begin(Input.mousePosition);
-
-			if(mouseMoving && (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0))
-					HandleDrag.Move(Input.mousePosition);
-
-			if(mouseUp)
-				HandleDrag.End(Input.mousePosition);
 	}
 }
